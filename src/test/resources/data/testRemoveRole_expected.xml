@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<ROLE ID_ROLE="1" NAME="admin" />
+	<ROLE ID_ROLE="3" NAME="vasya" />
+
+    <USER ID_USER="1" ROLE_ID="2" LOGIN="efiop" PASSWORD="123" EMAIL="pushkin@piter.org" FIRST_NAME="sasha" LAST_NAME="pushkin" BIRTHDAY="1997-10-20" />
+	<USER ID_USER="2" ROLE_ID="1" LOGIN="petr" PASSWORD="123" EMAIL="petr@piter.org" FIRST_NAME="petr" LAST_NAME="romanov" BIRTHDAY="1972-1-21" />
+	<USER ID_USER="3" ROLE_ID="1" LOGIN="slava" PASSWORD="123" EMAIL="slava@mail.org" FIRST_NAME="slava" LAST_NAME="sevirsky" BIRTHDAY="2001-8-3" />
+	
+</dataset>

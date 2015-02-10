@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.nixsolutions.nesterenko.laba16_hibernate.entity">
+
+	<class name="User" table="USER">
+
+		<meta attribute="class-description">
+			This class contains user info
+		</meta>
+
+		<id name="id" type="long" column="ID_USER" >
+		<generator class="native"/>
+		</id>
+		<many-to-one name="role" class="Role" column="role_id" not-null="true" cascade="save-update" lazy="false" />
+		<property name="login" type="string" column="LOGIN" />
+		<property name="password" type="string" column="PASSWORD" />
+		<property name="email" type="string" column="EMAIL" />
+		<property name="firstName" type="string" column="FIRST_NAME" />
+		<property name="lastName" type="string" column="LAST_NAME" />
+		<property name="birthday" type="date" column="BIRTHDAY" />
+
+	</class>
+
+</hibernate-mapping>

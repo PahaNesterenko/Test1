@@ -1,0 +1,14 @@
+#form
+{
+    margin: 80px auto;
+    width: 340px;
+    padding: 10px;
+}
+#error
+{
+    color: red;
+}
+.field
+{
+    text-align: right
+}

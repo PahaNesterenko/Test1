@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="com.nixsolutions.nesterenko.laba16_hibernate.entity">
+
+    <class name="Role" table="ROLE">
+
+        <meta attribute="class-description">
+            This class contains role info
+        </meta>
+
+        <id name="id" type="long" column="ID_ROLE" >
+        <generator class="native"/>
+        </id>
+
+        <property name="name" column="NAME" type="string" />
+        
+         <set name="users" lazy="true" >
+            <key column="role_id" />
+            <one-to-many class="User" />
+        </set>
+
+    </class>
+
+</hibernate-mapping>
